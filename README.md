@@ -23,6 +23,8 @@ After getting the best estimator parameters, I have created a HashingVectorizer 
 
 After saving the file which are required for the web hosting, I have created a sql lite database to store the reviews entered from the web app i.e. the online reviews. 
 
+My code has comments for most of the steps to make it easy for understanding.
+
 ## Web Application
 I have used Flask to prepare my web application and also created templates for each HTML webpage. You can access the code for my application from app.py. Here, I am loading the pickled classifier and reading the review entered by the customer. I then call the tokenizer and the vectorizer methods written separately in the saved python file and run my classifier on it. Then, I display the prediction result and take the customer's feedback in order to train the classifier based on the correct results.
 
