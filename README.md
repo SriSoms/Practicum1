@@ -32,3 +32,12 @@ The 'Sentiment Analysis' tab loads the data of all the different reviews given b
 
 ## Conclusion
 So, this is my web application. Feel free to send feedback or suggestions!
+
+## References
+1. <https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html>
+2. <https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html>
+3. <https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html>
+4. <https://www.datacamp.com/community/tutorials/stemming-lemmatization-python>
+5. <https://flask.palletsprojects.com/en/1.1.x/quickstart/>
+6. <https://blog.pythonanywhere.com/121/>
+7. <https://www.sqlitetutorial.net/>
