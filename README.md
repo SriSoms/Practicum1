@@ -6,7 +6,7 @@ I have used Python for the most part of my project, Flask and HTML along with Py
 
 ## Organization
 
-You can access the codes for both my sub projects from SentimentClassifier.ipynb and RatingPredictor.ipynb. The dataset I used is downloaded from Kaggle in a CSV format and can be accessed from the main thread. The website folder consists of all the files required to host my website with the pickle objects, HTML templates, CSS sheet and the app.py file. 
+You can access the codes for both my sub projects from SentimentClassifier.ipynb and RatingPredictor.ipynb. The dataset I used is downloaded from Kaggle in a CSV format and can be accessed from the main thread. This is the link to the dataset: <https://www.kaggle.com/datafiniti/consumer-reviews-of-amazon-products/data#Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv>. The website folder consists of all the files required to host my website with the pickle objects, HTML templates, CSS sheet and the app.py file. 
 
 ## Data Preparation
 
