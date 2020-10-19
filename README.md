@@ -1,6 +1,8 @@
 #  Sentiment Analysis on Amazon Reviews with Online Learning
 
-This project is intended to perform sentiment analysis and rating predictions on Amazon reviews on various products. I have used Python for the most part of my project, Flask and HTML along with Python for creating my web app. I have hosted my web app on PythonAnywhere and can be accessed here: <http://srisowmya.pythonanywhere.com/>.
+This is a project on Sentiment analysis of Amazon product reviews where each review will be classified as positive or negative. Once the classification step is done, an interactive website will be published where users will be prompted to enter a review for a product. The algorithm we developed will be classifying this newly entered review as positive or negative, based on the previous learnings. The user will then be able to give feedback whether the model classified the review correctly or not and based on this the model will be trained further with the new example, thus mimicking the out-of-core learning.
+
+I have used Python for the most part of my project, Flask and HTML along with Python for creating my web app. I have hosted my web app on PythonAnywhere and can be accessed here: <http://srisowmya.pythonanywhere.com/>.
 
 ## Organization
 
@@ -31,7 +33,7 @@ As you can see, I display the Home screen first giving a quick introduction on h
 The 'Sentiment Analysis' tab loads the data of all the different reviews given by the user and shows the correct sentiment in there. For making it more interesting, I have included the prediction given by the model too. This way the user gets a chance to test if the model is learning incrementally or not. Similarly, I have also included a 'Rating Analysis' tab, to show the results from the rating predictions.
 
 ## Conclusion
-So, this is my web application. Feel free to send feedback or suggestions!
+Once the model has been trained, it keeps getting better and continues to learn from the online web application. When the user enters a review through the web application, there is an option to submit feedback based on whether the machine prediction is correct or incorrect. This feedback goes back to the system and it becomes a part of the learning. If the system has predicted something incorrectly, the user can submit what the actual rating/sentiment should be and the system learns from this and predicts the rating or sentiment correctly the next time. It may take a few iterations for the model to learn the correct prediction. Feel free to send feedback or suggestions!
 
 ## References
 1. <https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html>
