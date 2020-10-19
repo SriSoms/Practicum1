@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+
+
+<h2>Please enter your Amazon product review:</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+  <dl>
+	{{ render_field(form.amazonreview, cols='30', rows='10') }}
+  </dl>
+  <div>
+	  <input type=submit value='Submit review' name='submit_btn'>
+  </div>
+</form>
+
+{% include 'footer.html' %}

@@ -1,0 +1,55 @@
+{% include 'header.html' %}
+
+<h3>Your Amazon product review:</h3>
+<div>{{ content }}</div>
+
+
+
+<div id='button'>
+  <form action="/thanks" method="post">
+			<h3>Sentiment Analysis:</h3>
+			<div>This Amazon product review is <strong>{{ prediction }} </strong>
+			 (probability: {{ probability }}%).</div>
+			<h3> Actual Sentiment? </h3>
+      <input type=radio name="rating" value="0">
+      <label for="0"> Negative </label><br>
+      <input type=radio name="rating" value="1">
+      <label for="1"> Neutral </label><br>
+			<input type=radio name="rating" value="2">
+      <label for="2"> Positive </label><br>
+      <input type=hidden value='{{ prediction }}' name='prediction'>
+      <input type=hidden value='{{ content }}' name='review'>
+      <br>
+			<br>
+			<br>
+			<h3>Rating Prediction Analysis:</h3>
+			<div>This Amazon product review is <strong>{{ prediction2 }} </strong>
+				 (probability: {{ probability2 }}%).</div>
+				<h3> Actual Rating? </h3>
+			 <input type=radio name="rating2" value="1">
+       <label for="1"> 1 </label><br>
+       <input type=radio name="rating2" value="2">
+       <label for="2"> 2 </label><br>
+ 			<input type=radio name="rating2" value="3">
+       <label for="3"> 3 </label><br>
+ 			<input type=radio name="rating2" value="4">
+       <label for="4"> 4 </label><br>
+ 			<input type=radio name="rating2" value="5">
+       <label for="5"> 5 </label><br>
+       <input type=hidden value='{{ prediction2 }}' name='prediction2'>
+       <input type=hidden value='{{ content }}' name='review2'>
+       <br>
+       <br>
+       <br>
+      <input type=submit value='Submit'>
+      <br>
+      <br>
+      <br>
+ </form>
+</div>
+
+
+
+
+
+{% include 'footer.html' %}
